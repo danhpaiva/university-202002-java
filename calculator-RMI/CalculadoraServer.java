@@ -9,18 +9,29 @@ public class CalculadoraServer extends UnicastRemoteObject implements Calculador
   public CalculadoraServer() throws RemoteException
   { 
   	  super(); 
-	  System.err.println("Criada uma instancia desta classe...");
+	  System.out.println("Criada uma instancia desta classe...");
   }
-  public String somar(float numero1, float numero2)  throws RemoteException
+  public int somar(int numero1, int numero2)  throws RemoteException
   {
-	  System.err.println("Requisicao atendida !");
-	  return numero1 + numero2;
+	  return (numero1 + numero2);
+  }
+  public int subtrair(int numero1, int numero2)  throws RemoteException
+  {
+	  return (numero1 - numero2);
+  }
+  public int multiplicar(int numero1, int numero2)  throws RemoteException
+  {
+	  return (numero1 * numero2);
+  }
+  public int dividir(int numero1, int numero2)  throws RemoteException
+  {
+	  return (numero1 / numero2);
   }
   public static void main (String args[]) throws Exception 
   {
 	  CalculadoraServer objMensagem = new CalculadoraServer();
 	  String nomeObjServidor = "//localhost/CalculadoraServer";
 	  Naming.rebind(nomeObjServidor, objMensagem);
-	  System.err.println("Servidor rodando...");
+	  System.out.println("Servidor rodando...");
   }
 }

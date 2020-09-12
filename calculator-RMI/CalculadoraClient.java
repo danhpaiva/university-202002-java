@@ -4,13 +4,13 @@ public class CalculadoraClient{
   
   public static void main (String args[]) throws RemoteException
   {
-    String msg;
+    int resultado;
     
     try {
      
-	  CalculadoraClient obj = (CalculadoraClient) Naming.lookup("//localhost/CalculadoraServer");
-  	  msg = obj.somar(5, 10);
-  	  System.err.println(msg);
+	  CalculadoraServer obj = (CalculadoraServer) Naming.lookup("//localhost/CalculadoraServer");
+  	  resultado = obj.somar(10, 5);
+  	  System.out.println(resultado);
       
     } catch (Exception e) {
        System.err.println("Falha de conexao : " + e.toString());

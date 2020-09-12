@@ -1,8 +1,8 @@
 import java.rmi.*;
 
 public interface Calculadora extends Remote{
-    public String somar() throws RemoteException;
-    public String subtrair() throws RemoteException;
-    public String multiplicar() throws RemoteException;
-    public String dividir() throws RemoteException;
+    public int somar(int numero1, int numero2) throws RemoteException;
+    public int subtrair(int numero1, int numero2) throws RemoteException;
+    public int multiplicar(int numero1, int numero2) throws RemoteException;
+    public int dividir(int numero1, int numero2) throws RemoteException;
 }
