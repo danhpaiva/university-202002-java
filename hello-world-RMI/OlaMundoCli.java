@@ -10,7 +10,7 @@ public class OlaMundoCli{
      
 	  OlaMundo obj = (OlaMundo) Naming.lookup("//localhost/OlaMundoServer");
   	  msg = obj.frase();
-  	  System.err.println(msg);
+  	  System.out.println(msg);
       
     } catch (Exception e) {
        System.err.println("Falha de conexao : " + e.toString());

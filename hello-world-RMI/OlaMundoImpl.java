@@ -9,11 +9,11 @@ public class OlaMundoImpl extends UnicastRemoteObject implements OlaMundo{
   public OlaMundoImpl() throws RemoteException
   { 
   	  super(); 
-	  System.err.println("Criada uma instancia desta classe...");
+	  System.out.println("Criada uma instancia desta classe...");
   }
   public String frase()  throws RemoteException
   {
-	  System.err.println("Requisicao atendida !");
+	  System.out.println("Requisicao atendida !");
 	  return "Ola Mundo ! (frase classica)";
   }
   public static void main (String args[]) throws Exception 
@@ -21,6 +21,6 @@ public class OlaMundoImpl extends UnicastRemoteObject implements OlaMundo{
 	  OlaMundoImpl objMensagem = new OlaMundoImpl();
 	  String nomeObjServidor = "//localhost/OlaMundoServer";
 	  Naming.rebind(nomeObjServidor, objMensagem);
-	  System.err.println("Servidor rodando...");
+	  System.out.println("Servidor rodando...");
   }
 }
