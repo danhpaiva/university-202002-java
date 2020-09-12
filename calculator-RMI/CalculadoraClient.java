@@ -39,7 +39,7 @@ public class CalculadoraClient{
           System.out.println("\nResultado: " + resultado);
           break;
         default:
-          System.out.println("\nOperação inválida!");
+          System.out.println("\n"+ operacao + ": Código de Operação inválida!");
           break;
       } 
     } catch (Exception e) {
