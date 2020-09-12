@@ -8,7 +8,7 @@ public class CalculadoraClient{
     
     try {
      
-	  CalculadoraServer obj = (CalculadoraServer) Naming.lookup("//localhost/CalculadoraServer");
+	  Calculadora obj = (Calculadora) Naming.lookup("//localhost/CalculadoraServer");
   	  resultado = obj.somar(10, 5);
   	  System.out.println(resultado);
       
