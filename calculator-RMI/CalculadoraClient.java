@@ -19,7 +19,8 @@ public class CalculadoraClient{
       
       System.out.println("Informe o segundo valor: ");
       int valor2 = Integer.valueOf(scan.nextLine());
-      
+      scan.close(); //Fechar scan
+
       switch (operacao) {
         case 1:
           resultado = obj.somar(valor1, valor2);
