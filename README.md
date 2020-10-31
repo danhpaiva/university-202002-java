@@ -26,7 +26,7 @@ Go to the system environment variables and add a new Path:
 5. Enjoy :smile:
 
 
-## App's
+## List of Applications
 - Hello World
 - Calculator
 
