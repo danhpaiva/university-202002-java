@@ -1,11 +1,11 @@
 # :smile: Java RMI
 Some applications with distributed systems in java
 
-## Description
+## :page_facing_up: Description
 A distributed system is a collection of autonomous devices connected by a communication network that is perceived by users as a single device providing services or solving problems.<br>
 The systems were programmed in the Java.
 
-## How to run
+## :pushpin: How to run
 
 <strong>Prepare the environment</strong><br>
 Download and Install the JDK 15.<br>
