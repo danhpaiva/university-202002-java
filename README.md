@@ -1,4 +1,4 @@
-# :smile: Java RMI
+# :star: Java RMI
 Some applications with distributed systems in java
 
 ## :page_facing_up: Description
