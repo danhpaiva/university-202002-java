@@ -30,7 +30,7 @@ Go to the system environment variables and add a new Path:
 - Hello World
 - Calculator
 
-## Tools used
+## :toolbox: Tools used
 
 - Visual Studio Code
 - Java JDK 15
